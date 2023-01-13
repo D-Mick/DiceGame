@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
-        var diceArray = [UIImage(named: "DiceOne"), UIImage(named: "DiceTwo"), UIImage(named: "DiceThree"), UIImage(named: "DiceFour"), UIImage(named: "DiceFive"),UIImage(named: "DiceSix"),]
+        let diceArray = [UIImage(named: "DiceOne"), UIImage(named: "DiceTwo"), UIImage(named: "DiceThree"), UIImage(named: "DiceFour"), UIImage(named: "DiceFive"),UIImage(named: "DiceSix"),]
         diceImageViewOne.image = diceArray[Int.random(in: 1...5)]
         diceImageViewTwo.image = diceArray[Int.random(in: 1...5)]
     }
